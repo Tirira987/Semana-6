@@ -6,7 +6,7 @@ class Restaurante:
 
     def __init__(self, nombre_establecimiento: str):
         self.nombre_establecimiento = nombre_establecimiento
-        # Lista interna que almacenará objetos de tipo Producto (Platillos y Bebidas)
+        # Lista interna de tipo Producto (Platillos y Bebidas)
         self.__menu = []
 
     def agregar_producto(self, producto: Producto) -> None:
@@ -25,8 +25,7 @@ class Restaurante:
             return
 
         for producto in self.__menu:
-            # Aquí ocurre el Polimorfismo: Python detecta en tiempo de ejecución 
-            # si debe llamar al método de Platillo o de Bebida de forma dinámica.
+            
             print(producto.mostrar_informacion())
             
         print(f"======================================================================\n")

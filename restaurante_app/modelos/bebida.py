@@ -11,7 +11,7 @@ class Bebida(Producto):
         self.volumen_ml = volumen_ml
 
     def mostrar_informacion(self) -> str:
-        """Sobrescribe el método de la clase padre para demostrar polimorfismo."""
+        """Método de la clase padre para demostrar polimorfismo."""
         estado = "Disponible" if self.disponible else "No Disponible"
         return (f"🥤 [Bebida]   {self.nombre:<18} | Vol: {self.volumen_ml:>4} ml  | "
                 f"Precio: ${self.obtener_precio():.2f} | {estado}")

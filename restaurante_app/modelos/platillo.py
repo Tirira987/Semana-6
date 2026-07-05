@@ -11,7 +11,7 @@ class Platillo(Producto):
         self.tipo_platillo = tipo_platillo
 
     def mostrar_informacion(self) -> str:
-        """Sobrescribe el método de la clase padre para demostrar polimorfismo."""
+        """Método de la clase padre para demostrar polimorfismo."""
         estado = "Disponible" if self.disponible else "No Disponible"
         return (f"🍽️  [Platillo] {self.nombre:<18} | Tipo: {self.tipo_platillo:<10} | "
                 f"Precio: ${self.obtener_precio():.2f} | {estado}")
